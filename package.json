@@ -1,0 +1,13 @@
+{
+  "name": "tranquil-tips",
+  "main": "./lib/tranquil-tips",
+  "version": "1.0.0",
+  "description": "Displays tips about Tranquil in the background when there are no editors open.",
+  "repository": "https://github.com/tranquillabs/tranquil-tips",
+  "author": { "name": "Tranquil Labs", "url": "https://github.com/tranquillabs" },
+  "license": "MIT",
+  "engines": { "atom": ">=0.174.0 <2.0.0" },
+  "dependencies": {
+    "underscore-plus": "^1.7.0"
+  }
+}
