@@ -29,5 +29,34 @@ background-tips {
         font-family: "Helvetica Neue", Arial, sans-serif;
       }
     }
+
+    // Advance to the next tip. Typographic rather than an icon: it borrows the same pill
+    // treatment as the .keystroke badges above, at a fraction of the tip's own type size, so it
+    // reads as part of the message instead of a control bolted onto it.
+    //
+    // `background-tips` is pointer-events:none so clicks pass through to the empty pane behind
+    // it; this button is the one thing that opts back in.
+    .next-tip {
+      pointer-events: auto;
+      margin-top: (@component-padding * 2);
+      font-family: inherit;
+      font-size: 0.36em; // the message runs at @font-size*3; this lands near body size
+      letter-spacing: 0.02em;
+      padding: (@component-padding/3) (@component-padding * 1.5);
+      border: 2px solid;
+      border-radius: (@component-border-radius * 3);
+      background: transparent;
+      color: inherit;
+      opacity: 0.35;
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+
+      &:hover {
+        opacity: 0.75;
+      }
+      &:active {
+        opacity: 0.9;
+      }
+    }
   }
 }
