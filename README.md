@@ -7,7 +7,7 @@
 ## What it does
 
 - Shows a rotating tip — with rendered keybinding badges — in the empty editor background.
-- Cycle to the next tip with a command.
+- Cycle to the next tip with a command, or the Next tip button in the corner.
 
 ## License
 
